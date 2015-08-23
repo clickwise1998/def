@@ -41,13 +41,12 @@
 
 % The \icmltitle you define below is probably too long as a header.
 % Therefore, a short form for the running title is supplied here:
-\icmltitlerunning{Submission and Formatting Instructions for ICML 2012}
+\icmltitlerunning{Sparse stochastic inference for latent Dirichlet allocation}
 
 \begin{document}
 
 \twocolumn[
-\icmltitle{Submission and Formatting Instructions for the Twenty-Eighth \\
-           International Conference on Machine Learning (ICML 2012)}
+\icmltitle{Sparse stochastic inference for latent Dirichlet allocation}
 
 % It is OKAY to include author information, even for blind
 % submissions: the style file will automatically remove it for you
@@ -69,9 +68,14 @@
 ]
 
 \begin{abstract}
-ICML 2012 full paper submissions are due February 24, 2012. Reviewing will
-be blind to the identities of the authors, and therefore identifying
-information must not appear in any way in papers submitted for review. Submissions must be in PDF, 8 page length limit.
+We present a hybrid algorithm for Bayesian
+topic models that combines the efficiency of
+sparse Gibbs sampling with the scalability of
+online stochastic inference. We used our algorithm to analyze a corpus of 1.2 million books
+(33 billion words) with thousands of topics.
+Our approach reduces the bias of variational
+inference and generalizes to many Bayesian
+hidden-variable models.
 \end{abstract}
 
 \section{Electronic Submission}
