@@ -1,0 +1,12 @@
+聞figure罪睡曾双
+
+喇
+\begin{figure*}[ht]
+。。。。。。。。。。。。。。
+\end{figure*}
+
+延葎
+
+\begin{figure*}[ht]
+。。。。。。。。。。。。。。
+\end{figure*}
