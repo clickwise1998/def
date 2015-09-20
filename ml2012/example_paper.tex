@@ -153,8 +153,8 @@ Authors using \textbf{Word} must convert their document to PDF.  Most
 of the latest versions of Word have the facility to do this
 automatically.  Submissions will not be accepted in Word format or any
 format other than PDF. Really. We're not joking. Don't send Word.
-\[M(s)<M(t)<|M|=m\] 
-\[y''=c\{f[y',y(x)]+g(x)\}\]\vspace{5pt} 
+\[M(s)<M(t)<|M|=m\]
+\[y''=c\{f[y',y(x)]+g(x)\}\]\vspace{5pt}
 \[\{f[g(x)]\}'=f'[g(x)]g'(x)\]
 \begin{eqnarray}
 (f(x)g(x))'' &=& f''(x)g(x)+2f'(x)g'(x)+f(x)g''(x)\nonumber\\
@@ -167,6 +167,28 @@ format other than PDF. Really. We're not joking. Don't send Word.
 \[\frac{1}{x+y}\hspace{1cm}\frac{a^2-b^2}{a+b}=a-b\]
 \[\sqrt[n]{\frac{x^n-y^n}{1+u^{2n}}}\hspace{1cm}
 \frac{\frac{a}{x-y}+\frac{b}{x+y}}{1+\frac{a-b}{a+b}}\]
+\[\sqrt{x^2+y^2+2xy}=x+y\hspace{1cm}\sqrt[3]{-1+\sqrt{q^2+p^3}}\]
+\[\sum_{i=1}^n\hspace{1cm}\int_a^b\]
+\[\int\limits_{x=0}^{x=1}\hspace{1cm}2\sum_{i=1}^n a_i \int^b_a f_i(x)g_i(x)\,\mathrm{d}x\]
+\[a_0,a_1,\ldots,a_n\hspace{1cm}a_0+a_1+\cdots+a_n\]
+These are giiven by Cardan's formula as
+\begin{eqnarray*}y_1&=&u+v\\ \nonumber
+                y_2&=&-\frac{u+v}{2}+\frac{i}{2}\sqrt{3}(u-v)\\ \nonumber
+                y_3&=&-\frac{u+v}{2}-\frac{i}{2}\sqrt{3}(u-v) \nonumber
+\end{eqnarray*}
+where
+\begin{eqnarray*}u&=&\sqrt[3]{-q+\sqrt{q^2+p^3}}\\ \nonumber
+                v&=&\sqrt[3]{-q-\sqrt{q^2+p^3}} \nonumber
+\end{eqnarray*}
+
+Each of the measurements $x_1<x_2<\cdots<x_r$,occurs $p_1,p_2,\ldots,p_r$ times. The 
+mean value and standard deviation are then
+\begin{eqnarray*}
+    x&=&\frac{1}{n}\sum_1^r p_ix_i \\ \nonumber
+    s&=&\sqrt{\frac{1}{n}\sum_1^r p_i(x_i-x)^2} \nonumber
+\end{eqnarray*}
+where $n=p_1+p_2+\cdots+p_r$.
+
 Those who use \textbf{\LaTeX} to format their accepted papers need to
 pay close attention to the typefaces used.  Specifically, when
 producing the PDF by first converting the dvi output of \LaTeX\ to Postscript
