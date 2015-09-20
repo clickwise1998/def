@@ -195,7 +195,24 @@ present any great difficulties:
 \[\frac{2\sqrt{(ax+b)^3}}{3}+2b\sqrt{ax+b}+b^2 \int\frac{\mathrm{d}x}{x\sqrt{ax+b}}\]
 The same applies to $\int_{-1}^8(\mathrm{d}x/\sqrt[3]{x})=\frac{3}{2}(8^\frac{2}{3}+1^\frac{2}{3})=15/2$.
 
+{\bf Logistic Regression:} Assume samples are $(x^{(1)},y^{(1)}),\cdots,(x^{(m)},y^{(m)}),\;y^{(i)}\in\{1,2,\ldots,k\}$, $\theta$ represents a vector of all parameters, $\theta_j$ represents parameter corresponding to feature $j$.
+Each sample $x^{(i)}$'s probability is expressed as a sigmoid function. The probability that $x^{(i)}$ is assigned label $1$ given $\theta$ is equal to
+\begin{eqnarray}
+p(y^{(i)}=1|x^{(i)};\theta)&=&h_{\theta}(x)\\\nonumber
+         &=&\frac{1}{1+exp(-{\theta}^Tx)}\\\nonumber
+         &=&\sigma({\theta}^Tx)\nonumber
+\end{eqnarray}
 
+So the objective function is 
+\begin{eqnarray}
+J(\theta)&=&-\sum_i^m \{ y^{(i)}log(h_{\theta}(x^{(i)}))\\\nonumber
+         &&+(1-y^{(i)}log(1-h_{\theta}(x^{(i)}))\}\nonumber
+\end{eqnarray}         
+
+The gradient is 
+\begin{equation}
+\bigtriangledown_jJ(\theta)=\sum_{i=1}^Dx_j^{(i)}(h_{\theta}(x^{(i)})-y^{(i)})
+\end{equation}
 Those who use \textbf{\LaTeX} to format their accepted papers need to
 pay close attention to the typefaces used.  Specifically, when
 producing the PDF by first converting the dvi output of \LaTeX\ to Postscript
@@ -209,6 +226,7 @@ something like the following commands:\\[0.5em]
 {\bf ps2pdf paper.ps}\\[0.5em]
 Note that it is a zero following the ``-G''.  This tells dvips to use
 the config.pdf file (and this file refers to a better font mapping).
+
 
 Another alternative is to use the \textbf{pdflatex} program instead of
 straight \LaTeX. This program avoids the Type-3 font problem, however
