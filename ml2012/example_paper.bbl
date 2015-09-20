@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,6 +25,12 @@ Langley, P.
 \newblock In Langley, Pat (ed.), \emph{Proceedings of the 17th International
   Conference on Machine Learning (ICML 2000)}, pp.\  1207--1216, Stanford, CA,
   2000. Morgan Kaufmann.
+
+\bibitem[Li et~al.(2014)Li, Andersen, Smola, and Yu]{MuLi}
+Li, Mu, Andersen, David~G., Smola, Alexander, and Yu, Kai.
+\newblock Communication efficient distributed machine learning with the
+  parameter server.
+\newblock \emph{NIPS}, 2014.
 
 \bibitem[Michalski et~al.(1983)Michalski, Carbonell, and
   Mitchell]{MachineLearningI}
