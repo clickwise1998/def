@@ -412,10 +412,10 @@ appear in each column, in the same order as they appear in the text,
 but spread them across columns and pages if possible.}
 
 %\begin{figure}[ht]
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \vskip 0.2in
 \begin{center}
-\centerline{\includegraphics[width=\columnwidth]{icml_numpapers}}
+\centerline{\includegraphics[width=\columnwidth]{image001}}
 \caption{Historical locations and number of accepted papers for International
   Machine Learning Conferences (ICML 1993 -- ICML 2008) and
   International Workshops on Machine Learning (ML 1988 -- ML
@@ -424,7 +424,7 @@ but spread them across columns and pages if possible.}
 \label{icml-historical}
 \end{center}
 \vskip -0.2in
-\end{figure*}
+\end{figure}
 
 \subsection{Figures}
 
@@ -438,6 +438,36 @@ Label all distinct components of each figure. If the figure takes the
 form of a graph, then give a name for each axis and include a legend
 that briefly describes each curve. Do not include a title inside the
 figure; instead, the caption should serve this function.
+
+
+\begin{table}[t]
+\caption{Classification accuracies for naive Bayes and flexible
+Bayes on various data sets.}
+\label{sample-table}
+\vskip 0.15in
+\begin{center}
+\begin{small}
+\begin{sc}
+\begin{tabular}{lcccr}
+\hline
+\abovespace\belowspace
+Dataset & Size & Length & Time? \\
+\hline
+\abovespace
+Breast    & 95.9$\pm$ 0.2& 96.7$\pm$ 0.2& $\surd$ \\
+Cleveland & 83.3$\pm$ 0.6& 80.0$\pm$ 0.6& $\times$\\
+Glass2    & 61.9$\pm$ 1.4& 83.8$\pm$ 0.7& $\surd$ \\
+Credit    & 74.8$\pm$ 0.5& 78.3$\pm$ 0.6&         \\
+Horse     & 73.3$\pm$ 0.9& 69.7$\pm$ 1.0& $\times$\\
+\belowspace
+Vehicle   & 44.9$\pm$ 0.6& 61.5$\pm$ 0.4& $\surd$ \\
+\hline
+\end{tabular}
+\end{sc}
+\end{small}
+\end{center}
+\vskip -0.1in
+\end{table}
 
 Number figures sequentially, placing the figure number and caption
 {\it after\/} the graphics, with at least 0.1~inches of space before
@@ -462,7 +492,7 @@ Algorithm~\ref{alg:example} shows an example.
    \label{alg:example}
 \begin{algorithmic}
    \STATE  {\bfseries Input:} data $x_i$, size $m$
-   \REPEAT 
+   \REPEAT
    \STATE Initialize $noChange = true$.
    \FOR{$i=1$ {\bfseries to} $m-1$}
    \IF{$x_i > x_{i+1}$}
@@ -470,7 +500,7 @@ Algorithm~\ref{alg:example} shows an example.
    \STATE $noChange = false$
    \ENDIF
    \ENDFOR
-   \UNTIL{$noChange$ is $true$} 
+   \UNTIL{$noChange$ is $true$}
 \end{algorithmic}
 \end{algorithm}
 
@@ -541,7 +571,7 @@ comma \cite{Samuel59}. List multiple references separated by
 semicolons \cite{kearns89,Samuel59,mitchell80}. Use the `et~al.'
 construct only for citations with three or more authors or after
 listing all authors to a publication in an earlier reference \cite{MachineLearningI}.
- 
+
 \begin{algorithm}[tb]
    \caption{Bubble Sort listing all authors to a publication in an earlier reference}
    \label{alg:example}
@@ -552,7 +582,7 @@ listing all authors to a publication in an earlier reference \cite{MachineLearni
    \STATE Initialize $noChange = true$.
    \FOR{$i=1$ {\bfseries to} $m-1$}
    \IF{$x_i > x_{i+1}$}
-   \STATE Swap $x_i$ and $x_{i+1}$ Citations within the text should include the authors' last names and 
+   \STATE Swap $x_i$ and $x_{i+1}$ Citations within the text should include the authors' last names and
    \STATE $noChange = false$
    \ENDIF
    \ENDFOR
