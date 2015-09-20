@@ -545,8 +545,22 @@ listing all authors to a publication in an earlier reference \cite{MachineLearni
 \begin{algorithm}[tb]
    \caption{Bubble Sort}
    \label{alg:example}
+{\bfseries Step1 (data $x_i$, size $m$)}
 \begin{algorithmic}[1]
-   \STATE  {\bfseries Input:} data $x_i$, size $m$
+  % \STATE  {\bfseries Input:} data $x_i$, size $m$
+   \REPEAT
+   \STATE Initialize $noChange = true$.
+   \FOR{$i=1$ {\bfseries to} $m-1$}
+   \IF{$x_i > x_{i+1}$}
+   \STATE Swap $x_i$ and $x_{i+1}$
+   \STATE $noChange = false$
+   \ENDIF
+   \ENDFOR
+   \UNTIL{$noChange$ is $true$}
+\end{algorithmic}
+{\bfseries Step2 (data $x_i$, size $m$)}
+\begin{algorithmic}[1]
+ %  \STATE  {\bfseries Input:} data $x_i$, size $m$
    \REPEAT
    \STATE Initialize $noChange = true$.
    \FOR{$i=1$ {\bfseries to} $m-1$}
