@@ -181,7 +181,7 @@ where
                 v&=&\sqrt[3]{-q-\sqrt{q^2+p^3}} \nonumber
 \end{eqnarray*}
 
-Each of the measurements $x_1<x_2<\cdots<x_r$,occurs $p_1,p_2,\ldots,p_r$ times. The 
+Each of the measurements $x_1<x_2<\cdots<x_r$,occurs $p_1,p_2,\ldots,p_r$ times. The
 mean value and standard deviation are then
 \begin{eqnarray*}
     x&=&\frac{1}{n}\sum_1^r p_ix_i \\ \nonumber
@@ -203,13 +203,13 @@ p(y^{(i)}=1|x^{(i)};\theta)&=&h_{\theta}(x)\\\nonumber
          &=&\sigma({\theta}^Tx)\nonumber
 \end{eqnarray}
 
-So the objective function is 
+So the objective function is
 \begin{eqnarray}
 J(\theta)&=&-\sum_i^m \{ y^{(i)}log(h_{\theta}(x^{(i)}))\\\nonumber
          &&+(1-y^{(i)}log(1-h_{\theta}(x^{(i)}))\}\nonumber
-\end{eqnarray}         
+\end{eqnarray}
 
-The gradient is 
+The gradient is
 \begin{equation}
 \bigtriangledown_jJ(\theta)=\sum_{i=1}^Dx_j^{(i)}(h_{\theta}(x^{(i)})-y^{(i)})
 \end{equation}
@@ -458,11 +458,11 @@ algorithmic.sty, which are supplied with this package.
 Algorithm~\ref{alg:example} shows an example.
 
 \begin{algorithm}[tb]
-   \caption{Bubble Sort}x
+   \caption{Bubble Sort}
    \label{alg:example}
 \begin{algorithmic}
-   \STATE {\bfseries Input:} data $x_i$, size $m$
-   \REPEAT
+   \STATE  {\bfseries Input:} data $x_i$, size $m$
+   \REPEAT 
    \STATE Initialize $noChange = true$.
    \FOR{$i=1$ {\bfseries to} $m-1$}
    \IF{$x_i > x_{i+1}$}
@@ -470,7 +470,7 @@ Algorithm~\ref{alg:example} shows an example.
    \STATE $noChange = false$
    \ENDIF
    \ENDFOR
-   \UNTIL{$noChange$ is $true$}
+   \UNTIL{$noChange$ is $true$} 
 \end{algorithmic}
 \end{algorithm}
 
@@ -541,6 +541,24 @@ comma \cite{Samuel59}. List multiple references separated by
 semicolons \cite{kearns89,Samuel59,mitchell80}. Use the `et~al.'
 construct only for citations with three or more authors or after
 listing all authors to a publication in an earlier reference \cite{MachineLearningI}.
+ 
+\begin{algorithm}[tb]
+   \caption{Bubble Sort}
+   \label{alg:example}
+\begin{algorithmic}[1]
+   \STATE  {\bfseries Input:} data $x_i$, size $m$
+   \REPEAT
+   \STATE Initialize $noChange = true$.
+   \FOR{$i=1$ {\bfseries to} $m-1$}
+   \IF{$x_i > x_{i+1}$}
+   \STATE Swap $x_i$ and $x_{i+1}$
+   \STATE $noChange = false$
+   \ENDIF
+   \ENDFOR
+   \UNTIL{$noChange$ is $true$}
+\end{algorithmic}
+\end{algorithm}
+
 
 Authors should cite their own work in the third person
 in the initial version of their paper submitted for blind review.
